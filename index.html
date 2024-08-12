@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Game page</title>
+</head>
+
+<body onload="startHomeSound()">
+    <div class="start-container">
+        <div class="corner-images">
+            <img src="images/logo.png" alt="" class="image1">
+            <img src="images/logo.png" alt="" class="image2">
+            <img src="images/logo.png" alt="" class="image3">
+            <img src="images/logo.png" alt="" class="image4">
+        </div>
+        <h1>Hey there 🙋‍♂️!!! <br><br> <span class="auto-type"></span></h1>
+
+        <a href="startGame.html">start game</a>
+        <audio id="home-play" src="sounds/Main_Theme.mp3" loop="loop"></audio>
+    </div>
+
+    <script>
+
+        const startHomeSound = () => {
+            const home_play = document.getElementById('home-play')
+
+            setTimeout(() => {
+                home_play.play();
+                home_play.volume = 1.0;
+
+            }, 1000);
+        };
+
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+    <script src="typed.js"></script>
+</body>
+
+</html>

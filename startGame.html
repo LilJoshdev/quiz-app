@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Who wants to be a millonaire</title>
+</head>
+<body>
+    <div class="container">
+
+        <div id="modal-container" class="modal-container">
+            <span class="close" onclick="clickCloseModalBtn()">&times;</span>
+            <div class="bar-chart" id="barChart"></div>
+            <div class="modal">
+                <p class="modalText" style="padding-top: 80px; font-size: 30px; text-align: center;">CORRECT ANSWER!</p>
+                <div class="play-again-modal"></div>
+            </div>
+            
+        </div>
+        
+        <div class="left">
+            <div class="header">
+                <img src="images/logo.png" alt="" class="logo">              
+            </div>
+
+            <div class="time">
+                <p id="timer" class="timer"></p>
+                
+            </div>
+            <div class="question">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos magnam eveniet libero nemo pa</p>
+            </div>
+            <div class="options">
+                <p class="option">Josh</p>
+                <p class="option">Josh</p>
+                <p class="option">Josh</p>
+                <p class="option">Josh</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="lifelines">
+                <div class="lifeline fifty-fifty" id="fiftyFifty-lifeline">
+                    <p>50</p>
+                </div>
+                <div class="lifeline call" id="call-A-friend">
+                    <p><i class="fa-solid fa-phone"></i></p>
+                </div>
+                <div class="lifeline audience" id="ask-audience">
+                    <p><i class="fa-solid fa-users"></i></p>         
+                </div>
+
+            </div>
+
+            <div class="prize">
+                <div id="guaranteed" class=" prize-15"><span>15.</span>
+                    <p>$ 5,000,000</p>
+                </div>
+                <div class="prize-14"><span>14.</span>
+                    <p>$ 3,000,000</p>
+                </div>
+                <div class="prize-13"><span>13.</span>
+                    <p>$ 1,000,000</p>
+                </div>
+                <div class="prize-12"><span>12.</span>
+                    <p>$ 500,000</p>
+                </div>
+                <div class="prize-11"><span>11.</span>
+                    <p>$ 250,000</p>
+                </div>
+                <div id="guaranteed" class=" prize-10"><span>10.</span>
+                    <p>$ 100,000</p>
+                </div>
+                <div class="prize-9"><span>9.</span>
+                    <p>$ 50,000</p>
+                </div>
+                <div class="prize-8"><span>8.</span>
+                    <p>$ 25,000</p>
+                </div>
+                <div class="prize-7"><span>7.</span>
+                    <p>$ 16,000</p>
+                </div>
+                <div class="prize-6"><span>6.</span>
+                    <p>$ 8,000</p>
+                </div>
+                <div id="guaranteed" class=" prize-5"><span>5.</span>
+                    <p>$ 4,000</p>
+                </div>
+                <div class="prize-4"><span>4.</span>
+                    <p>$ 2,000</p>
+                </div>
+                <div class="prize-3"><span>3.</span>
+                    <p>$ 1,000</p>
+                </div>
+                <div class="prize-2"><span>2.</span>
+                    <p>$ 500</p>
+                </div>
+                <div class=" prize-1"><span>1.</span>
+                    <p>$ 200</p>
+                </div>
+            </div>
+            <button class="walkaway">Walk away</button>
+        </div>
+    </div>
+
+    <audio id="lets-play" src="sounds/Main_Theme.mp3"></audio>
+    <audio id="easy" src="sounds/easy.mp3"></audio>
+    <audio id="wrong-answer" src="sounds/src_sounds_wrong.mp3"></audio>
+    <audio id="correct-answer" src="sounds/src_sounds_correct.mp3"></audio>
+    <audio id="win" src="sounds/src_sounds_correct.mp3"></audio>
+    <audio id="lifeline" src="sounds/fiftyfifty.mp3"></audio>
+    <audio id="guaranteed-sound" src="sounds/guaranteed_sound_play.mp3"></audio>
+    
+    <script src="questionsData.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+</html>
