@@ -25,7 +25,7 @@ More updates on the game later .....
 - If you get any wrong answer before getting to the guaranteed price level, you will go back to the guaranteed price level you have surpassed successfully, however, you wont win anything if eventually you choose the wrong answer at the lowest guaranteed price.
 - You can also use lifelines such as 50/50, call a friend, and ask the audience (50/50 deletes two wrong answers, leaving one correct answer and wrong answer for you to choose.)\
 
-- Good lick 😉💖
+- Let's play "WHO WANTS TO BE A MILLONAIRE" 😉💖
 
 
 ### Built with
